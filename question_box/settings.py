@@ -13,7 +13,7 @@ SECRET_KEY = '3=@xd&51&$z8e7m*##l9%6v$j-7ol@lu5-maz^uon#g)#c8a72'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', 'cryptic-basin-29101.herokuapp.com']
+ALLOWED_HOSTS = ['0.0.0.0', 'cryptic-basin-29101.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -121,6 +121,7 @@ DATABASES['default'].update(db_from_env)
 
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
